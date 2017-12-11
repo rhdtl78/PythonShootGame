@@ -126,11 +126,11 @@ while 1:
 		if ismenu == 0:
 			if event.type == KEYDOWN:
 				ismenu = menu.select(event.key)
-		elif ismenu == 1:
-			running == True
-		elif ismenu == 2:
-			pygame.quit()
-			exit()
+				if ismenu == 1:
+					running == True
+				elif ismenu == 2:
+					pygame.quit()
+					exit()
 		else:
 
 			while running:
